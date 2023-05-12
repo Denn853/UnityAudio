@@ -8,6 +8,9 @@ TagManager:
   - Grass
   - Wood
   - Gravel
+  - Indoor
+  - Outdoor
+  - Tension
   layers:
   - Default
   - TransparentFX
