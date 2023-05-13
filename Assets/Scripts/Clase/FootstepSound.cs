@@ -6,6 +6,7 @@ public class FootstepSound : MonoBehaviour
 {
     public AudioClip[] footStepsOnGrass;
     public AudioClip[] footStepsOnWood;
+    public AudioClip[] footStepsOnGravel;
 
     public string material;
     
@@ -28,6 +29,11 @@ public class FootstepSound : MonoBehaviour
                     aSource.PlayOneShot(footStepsOnGrass[Random.Range(0, footStepsOnGrass.Length)]);
                 break;
 
+            case "Gravel":
+                if (footStepsOnGravel.Length > 0)
+                    aSource.PlayOneShot(footStepsOnGravel[Random.Range(0, footStepsOnGravel.Length)]);
+                break;
+
             default:
                 break;
 
@@ -40,8 +46,13 @@ public class FootstepSound : MonoBehaviour
         {
             case "Wood":
             case "Grass":
-                material = collision.gameObject.tag;
+                //material = collision.gameObject.tag;
                 break;
+
+            default:
+                material = "";
+                break;
+
         }
     }
 }
