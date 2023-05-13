@@ -19,7 +19,7 @@ public class FootstepSound : MonoBehaviour
         switch(material)
         {
             case "Wood":
-                if (footStepsOnGrass.Length > 0)
+                if (footStepsOnWood.Length > 0)
                     aSource.PlayOneShot(footStepsOnWood[Random.Range(0, footStepsOnWood.Length)]);
                 break;
 
