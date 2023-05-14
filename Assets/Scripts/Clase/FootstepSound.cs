@@ -6,7 +6,7 @@ public class FootstepSound : MonoBehaviour
 {
     public AudioClip[] footStepsOnGrass;
     public AudioClip[] footStepsOnWood;
-    public AudioClip[] footStepsOnGravel; 
+    public AudioClip[] footStepsOnGravel;
 
     public string material;
     
